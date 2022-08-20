@@ -1,0 +1,2 @@
+C:\Users\Miraç Ozan\source\repos\ReCapProjectFrontend\ReCapProjectFrontend\obj\Debug\ReCapProjectFrontend.esproj.SuggestedBindingRedirects.cache
+C:\Users\Miraç Ozan\source\repos\ReCapProjectFrontend\ReCapProjectFrontend\obj\Debug\ReCapProjectFrontend.esproj.CoreCompileInputs.cache
