@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './component/nav/nav.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { CommonModule } from '@angular/common';
+import { UserComponent } from './pages/user/user.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CommonModule } from '@angular/common';
     HomeComponent,
     NavComponent,
     RegisterComponent,
+    UserComponent,
   ],
   imports: [
     CommonModule,
