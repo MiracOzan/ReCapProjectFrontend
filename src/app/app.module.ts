@@ -14,6 +14,11 @@ import { NavComponent } from './component/nav/nav.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { CommonModule } from '@angular/common';
 import { UserComponent } from './pages/user/user.component';
+import { BrandsComponent } from './pages/brands/brands.component';
+import { FilterBrandPipe } from './component/pipes/filter-brands-pipe';
+import { CarsComponent } from './pages/cars/cars.component';
+import { FilterCarsPipe } from './component/pipes/filter-car-pipe';
+import { CategoryComponent } from './component/category/category.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +28,11 @@ import { UserComponent } from './pages/user/user.component';
     NavComponent,
     RegisterComponent,
     UserComponent,
+    BrandsComponent,
+    FilterBrandPipe,
+    FilterCarsPipe,
+    CarsComponent,
+    CategoryComponent
   ],
   imports: [
     CommonModule,
@@ -35,6 +45,7 @@ import { UserComponent } from './pages/user/user.component';
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right',
     }),
+    
   ],
   providers: [{
       provide: HTTP_INTERCEPTORS,

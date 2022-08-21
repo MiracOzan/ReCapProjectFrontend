@@ -9,39 +9,48 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="/cars">Arabalarımız</a>
       </li>
-      <li>
-        <a [routerLink]="['/brand']"
-           routerLinkActive="router-link-active"
-           class="nav-link px-2 link-dark">Markalarımız</a>
+      <li class="nav-item active">
+      <li class="nav-item"><a class="nav-link"
+          class="nav-link" routerLink="/brands" >Markalarımız
+        </a>
       </li>
-      <li *ngIf="!controlAuthentication()">
-        <button type="button"
-                class="btn btn-outline-primary me-2"
-                routerLink="/login">
-          Giriş Yap
-        </button>
-      </li>
-      <li *ngIf="!controlAuthentication()">
-        <button type="button"
-                class="btn btn-outline-primary me-2"
-                routerLink="/register">
-          Kayıt Ol
-        </button>
-      </li>
-      <div *ngIf="controlAuthentication()">
-      <li class="dropdown">
-        <button class="btn btn-outline-primary dropdown-toggle" type="button" routerLink="/users/update/{{ userId }}">
-          Hoşgeldiniz: {{fullName}}
-        </button>
+
+    </ul>
+
+    <div *ngIf="!controlAuthentication()">
+      <button type="button"
+              class="btn btn-outline-primary me-2"
+              routerLink="/login">
+        Giriş Yap
+      </button>
+    </div>
+
+    <div *ngIf="!controlAuthentication()">
+      <button type="button"
+              class="btn btn-outline-primary me-2"
+              routerLink="/register">
+        Kayıt Ol
+      </button>
+    </div>
+
+    <div *ngIf="controlAuthentication()" class="dropdown">
+      <button class="btn btn-outline-primary dropdown-toggle" type="button" routerLink="/users/update/{{ userId }}">
+        Hoşgeldiniz: {{fullName}}
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Edit Profile</a>
         <button type="button"
                 class="btn btn-outline-primary me-2"
                 (click)="logout()">
           Çıkış Yap
         </button>
-      </li>
-
       </div>
-    </ul>
+      <button type="button"
+              class="btn btn-outline-primary me-2"
+              (click)="logout()">
+        Çıkış Yap
+      </button>
+    </div>
   </header>
 </div>
       

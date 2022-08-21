@@ -10,8 +10,4 @@
     <!-- Folder where production build objects will be placed -->
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\ReCapProjectFrontend</BuildOutputFolder>
   </PropertyGroup>
-  <ItemGroup>
-    <Folder Include="src\app\component\" />
-    <Folder Include="src\app\pages\" />
-  </ItemGroup>
 </Project>
